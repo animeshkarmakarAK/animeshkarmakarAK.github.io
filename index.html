@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+
     
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
@@ -16,13 +18,13 @@
         <div class="row points">
             <button type="button" id = "dropdown-btn" >Dropdown</button>
             <div class="row point">
-                <a href="#" class ="about-me-btn" type="button"><i class="fa fa-times"></i>About me</a>
+                <a href="#" onclick=" location.href = '.about-me' " class ="about-me-btn" type="button"><i class="fa fa-times"></i>About me</a>
             </div>
             <div class="row point">
-                <a href="#" type="button">Education</a>
+                <a href="#" onclick="location.href = '.education' " type="button">Education</a>
             </div>
             <div class="row point">
-                <a href="#" class="publication-btn" type="button">Publications</a>
+                <a href="#" onclick="location.href = '.publication'" class="publication-btn" type="button">Publications</a>
             </div>
             <div class="row point">
                 <a href="#" type="button">Projects</a>
@@ -35,6 +37,7 @@
             </div>
 
         </div>
+   
         <div class="row">
             <div class="col-md-2 slider">
                 <div class="slider-options position-fixed">
@@ -62,22 +65,29 @@
                 <div class="row about-me">
                     <div class="col-md-6 offset-md-2 my-info">
                         <!-- <h1>Personal Info: </h1> -->
+                        <div class="row myname">
+                            <p>Animesh Karmakar <br><small>Web Developer & Machine Learning enthusiast</small></p>
+                        </div>
+
                         <h4>Greetings!</h4>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis quisquam numquam, sequi hic, aperiam fugit iste, ipsa ratione quo magnam. Voluptates quisquam nobis, officiis tenetur saepe impedit aspernatur facere.</h5>
-                        <p>Hi! This is Animesh karmakar. I am a Computer Science graduate from Pabna University of Science and Technology.
+                        <p>Hi! I'm Animesh Karmakar. I'm a Computer Science & Engineering graduate from 
+                            Pabna University of Science & Technology which is a renowned public university in Bangladesh.
+                            Currently I'm working in a startup software company as a Full Stack Web Developer.
+                            I like to make nice interactive & data intensive web applications.
+
+                            I also have a great interest in Machine learning. I did my undergraduate research on this field &
+                            have a <a href="https://www.journalbinet.com/jstei-090220-67.html">research paper publication</a>.
                         </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam, accusantium tempore veritatis culpa eveniet molestias rerum dolorum, adipisci itaque voluptatum eaque explicabo ea, architecto illum recusandae in impedit quo?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ab sint hic sit veniam expedita tempora, nam earum provident unde quaerat? Amet expedita perferendis, placeat praesentium reprehenderit alias distinctio ducimus?</p>
                     </div>
                     <div class="col-md-4 my-image">
-                        <img src="./images/my-image.jpg" class="img-fluid" alt="My image">
+                        <img src="./images/my-image.jpg" class="img-fluid rounded-circle" alt="My image">
                     </div>
                 </div>
         
         
         
                 <div class="row education">
-                    <div class="col-md-10 offset-md-2 mt-5">
+                    <div class="col-md-10 offset-md-2 mt-5 mb-5">
                         <h1>Education: </h1>
                     </div>
                     <div class="col-md-10 offset-md-2 degree-name">
@@ -85,7 +95,7 @@
                     </div>
                     <div class="col-md-10 offset-md-2">
                         <h4>Institute: Pabna University of science and Technology, Pabna-6600</h3>
-                        <h5>Department: Computer Science & Technology</h2>
+                        <h5>Department: Computer Science & Engineering.</h2>
                         <p>CGPA: 3.26(out of 4.00)</p>
                         <p>Session: 2014 - 2019</p>
                     </div>
@@ -135,7 +145,7 @@
                                 <h5>Framework & Technologies: </h5>
                             </div>
                             <div class="col-md-8 framework-body">
-                                <p>Laravel, Bootstrap, Ajax, jQuery</p>
+                                <p>HTML, CSS, Laravel, Bootstrap, Ajax, jQuery</p>
                             </div>
                         </div>
         
@@ -145,6 +155,15 @@
                             </div>
                             <div class="col-md-8 database-body">
                                 <p>MySQL, mongoDB</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-4 os-header">
+                                <h5>Operating Systems: </h5>
+                            </div>
+                            <div class="col-md-8 os-body">
+                                <p>Windows, Linux</p>
                             </div>
                         </div>
         
@@ -168,14 +187,18 @@
                     </div>
         
                     <div class="col-md-10 offset-md-2 publication-header">
-                        <p><b>Wisconsin of Cancer: Analysis of Wisconsin of Breast Cancer Dataset using machine learning algorihtms.</b></p>
-                        <p>Publication url: <a href="journal.binet.com/example">journal.binet.com/example</a></p>
-                    </div>
+                        <p><b>Analysis of Wisconsin Breast Cancer Original Dataset: Using Machine learning algorithms for Breast Cancer
+                            prediction, Pabna University of Science and Technology- Bangladesh, CSE-4500 final thesis.</b></p>
+
+                            <p>Jul 30, 2020 publication description​:  Journal of Science, Technology and Environment Informatics
+                                <a href="https://www.journalbinet.com/jstei-090220-67.html">Visit publication</a>
+                            </p>
+                        </div>
                 </div>
 
 
 
-                <div class="row mt-5">
+                <div class="row mt-5" id="projects">
                     <div class="col-md-10 offset-md-2">
                         <h1><i>Projects</i></h1>
                         <h2 class="mt-5">Web Projects:</h2>
@@ -201,8 +224,32 @@
                         <h4><b>6. Royal Enterprise System Management System</b></h4>
                         <p>Built a system management software for Royal Enterprise. This provided the user an amenity to complete the management process on the website page, handling customer data, distributor data very rapidly and can generate feedback like sales-report, invoice memo and can generate pdf of invoice & sales report.</p>
                     
-                        <h4><b>7. Aamm Bazar</b></h4>
+                        <h4><b>7. Aamm Bazzar</b></h4>
                         <p>A tiny E-commerce site which help a vendor to buy and sales mango to a customer.</p>
+                    </div>
+                </div>
+
+
+                <div class="row footer">
+                    <div class="col-md-12">
+                        <img src="images/pointing.png" alt="" name = "pointing-hand-img" class="img-fluid" height="200" width="200">
+                    </div>
+                    <div class="col-md-6 footer-body">
+                        <h4><i>Contact</i></h4>
+                        <p>Address: House(476/Baragharia) Ranihati Road, Chapai-Nawabganj sadar, Rajshahi, Bangladesh.</p>
+                        <p>E-mail: animesh.pust@gmail.com</p>
+                        <p>Phone Number: +8801750894491</p>
+
+                    </div>
+                    <div class="col-md-6 footer-body">
+                        <h4>Follow me</h4>
+                        <a href="https://web.facebook.com/profile.php?id=100007481649229"><img src="images/facebook.png" alt="facebook" class="social img-fluid"></a>
+                        <a href="https://www.linkedin.com/in/animesh-karmakar-a331a7126/"><img src="images/linkdin.png" alt="linkdin" class="social"></a>
+                   
+                    </div>
+
+                    <div class="col-md-12">
+                        <p class="text-center">All right reserved</p>
                     </div>
                 </div>
         
