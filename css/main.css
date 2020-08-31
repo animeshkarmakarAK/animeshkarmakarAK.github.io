@@ -172,8 +172,12 @@ background: black;
       color: whitesmoke;
   }
   .sidebar-toggle-button {
+      position: fixed;
+      top: 50px;
+      left: 15vw;
       transition: 0.5s;
       background: #024;
       color: white;
+      z-index: 1;
   }
 
