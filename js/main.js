@@ -44,6 +44,17 @@ function offPoint()
 
 window.onload = function () {
 
+
+    if(screen.width < 450){
+        var bar = document.getElementsByClassName('sidebar')[0];
+        bar.style.width  = "0px";
+    }
+    else {
+        openSidebar();
+    }
+
+
+
     offPoint();
 
     if(screen.width < 700) {
