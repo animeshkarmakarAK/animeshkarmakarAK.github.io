@@ -1,5 +1,6 @@
 
 body{
+    overflow: hidden;;
     font-family: 'Catamaran';
 }
 
@@ -93,8 +94,10 @@ h1{
 
 
 .slider{
-background: black;
-
+    background: #024;
+    text-transform: uppercase;
+    font-family: 'Catamaran';
+    letter-spacing: 0px;
 }
 
 .slider-options{
@@ -102,13 +105,43 @@ background: black;
     margin-top: 30vh;
 
 }
-.slider-options a{
-    margin-top: 3px;
-    margin-left: 15%;
-    font-size: 18px;
-    color: gold;
-    font-style: italic;
+.slider-options a {
+    margin-top: 16px;
+    margin-left: 20%;
+    font-size: 11px;
+    color: #fff;
+    font-style: normal;
+    font-family: 'Catamaran';
 }
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    /* width: 15vw; */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #024; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Catamaran';
+  }
+  .sidebar a:hover{
+      color: whitesmoke;
+  }
+  .sidebar-toggle-button {
+      transition: 0.5s;
+      background: #024;
+      color: white;
+  }
 
 .point{
     margin-left: 90px;
@@ -144,4 +177,11 @@ background: black;
 .social{
     max-width: 100px;
     max-height: 100px;
+}
+
+
+#slider-toggle-button{
+    position: fixed;
+    top: 10px;
+
 }
