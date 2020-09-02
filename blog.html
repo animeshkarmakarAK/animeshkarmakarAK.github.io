@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog - Animesh karmakar</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="sidebar">
+                <a href="./index.md" type="button">Home</a>
+                <a href="./resume.html" type="button">Resume</a>
+                <a href="#" type="button">Publications</a>
+                <a href="#" type="button">Projects</a>
+                <a href="./blog.html">Blog</a>
+            </div>
+   
+            <div class="row justify-content-center">
+                <div class="col-md-10 main-content">
+                    <button type="button" class="sidebar-toggle-button" onclick="showSidebar();" id = "sidebar-toggle-button">Open sidebar</button>
+
+                    
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Programming and compiler</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fa fa-quote-left" style="font-size: 60px; color: gray;"></i>
+
+                                I'm going to share my first programming lab experience problem with a solution concept.
+                                    At my very first computer programming language lab my teacher wrote a "Hello World" program. Because of 
+                                    I wasn't a little bit of familliar with computer programming so I got confused why he is writing such 
+                                    thing and showing this same message in screen. So I have wrote a simple concept of programming & compiler in below
+                            </p>
+                            <p>
+                                Suppose we want to write a poem. So what we need to know, a language. We know our mother tongue.
+                                Let's write the poem using our mother tongue. So now we have to find out the lyrics. Ok we got the lyrics.
+                                Then what? Our poem is written. Now someone reading my poem and laugh how you'r making fly a elephant in the sky. 
+                                How could it be possible. So he laughed. I can't receive the feeling that I intented. 
+
+                                    So what is the match of programmming with the above poem story. We have a programming language. We write a program to solve a
+                                    problem. Now we need to check out everything is working fine or not. So we need a Compiler who will give a finger on our eye 
+                                    by giving the syntax error if have. After that it will convert the code into machine code which is like our poem intented feeling.
+                                    Because we need the feeling.Ohterwise the poem or code is worthless.
+                                </p>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>শুরুতে Node.js</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fa fa-quote-left" style="font-size: 60px; color: gray;"></i>
+                                শুরু করার আগে আমাদের জানা উচিত Node.js টা কি? চলুন জেনে নেই
+
+                                Node.js একটা Runtime environment যেটা server side web application তৈরিতে ব্যবহিত হয়. এটা JavaScript এর কোন Framework নয় যদিও JavaScript দিয়েই তৈরি । Runtime environment বলতে বোঝাই যখন কোন প্রোগ্রাম চলা শুরু করে তখন যে Environment a তার কাজগুলা চালিয়ে যেতে পারে । এটাকে অনেকে ওয়েব সার্ভার বলে ভুল করতে পারে, কিন্তু যদি ওয়েব সার্ভারই হবে তবে Runtime Environment বলব কেন?
+                                
+                                ওয়েব সার্ভারে কি হয় । Client request পাঠালে সে সেটাকে Execute করে সে অনুযায়ী response পাঠাই ।  ওয়েব সার্ভার কিভাবে কাজ করবে সেটা modify করা যাইনা । অপরদিকে Node js ও একটা সার্ভার হিসাবে কাজ করে কিন্তু এর Core behavior কে API এর মাধ্যমে পরিবর্তন করা যাই। এজন্য এটাকে server না বলে runtime environment বলা হয় ।  
+                            </p>
+                            <p class="float-right">Published On: 9/3/19 10.27PM</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>মেশিনে রিকারসন </h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fa fa-quote-left" style="font-size: 60px; color: gray;"></i>
+                                রিকারসন নিয়ে ঝামেলা পহাতে হইনি এরকম প্রোগ্রামার খুব কম আছে । রিকারসনের অনেক ফর্ম এর কারনে এটাকে অনেক ঝামেলাদার মনে হয়। কিন্তু এটা যদি সথিকভাবে শেখান যাই তবে খুব একটা ঝামেলা আছে বলে মনে হবে না। তো শুরু করা যাক ... 
+                            
+                                <br> <b>Example 1: Easy</b>
+                                <pre style="color: burlywood;">
+                                    <code>
+                                        void rec ( int N ) 
+                                        {
+                                             if ( N == 0 ) return ; // বেস case 
+                                             rec ( N  - 1 ) ;
+                                        }
+                                    </code>
+                                </pre>
+                           
+                                
+                                এই ফাংশনটা একটা রিকারসিভ ফাংশন । যখন কোন ফাংশন নিজেকেই বারবার কল করতে থাকে তখন সেটাকে  রিকারসিভ ফাংশন বলে এবং পুরো প্রক্রিয়াটাকে রিকারসন বলে। 
+                                
+                                দুই প্রকারের রিকারসন আছে। 
+                                ১। সরাসরি (Direct).    সরাসরি নিজেকে কল করতে থাকে । ---Example 1
+                                ২। সরাসরি না  (Not direct)    অন্য ফাংশন এর মাধ্যমে নিজেকে কল করতে থাকে ।  
+                                
+                                রিকারসনকে মেশিন এর মাধ্যমে বুঝতে হবে, তাহলেই সহজে বোঝা যাবে, এর বারবার ভুলতে হবে না। এখন আমরা সেটা করব । 
+                                
+                                প্রথমে বুঝব ফাংশন । আমরা জানি আমাদের প্রোগ্রামের সব কাজ মেইন ফাংশন থেকে শুরু হয় আবার মেইন ফাংশন থেকেই শেষ হয় । মেইন ফাংশনকে আমাদের আলাদা ভাবে কল করতে হয়না । কারন আমাদের কম্পাইলার সেটাকে নিদিষ্ট একটা মেশিন কোড এ পরিনত করে যেটা ইন্সট্রাকশন  সেট এর কোড অনুযায়ী বলে দেই  এক্সিকিউসান এখান থেকে করা শুরু করবে। যাই হক কথাগুলো একটু জটিল হয়ে গেল । 
+                                
+                                তো মেইন ফাংশন হোক আর অন্য কোন কলিং ফাংশন হোক না কেন সেটা কল হউয়ার ধারা অনুযায়ী কম্পিউটারের মেমোরির stack segment এ জমা হতে থাকে । এই জিনিসটা বোঝাই মেইন ইস্যু । তাই সতর্ক । যতক্ষণ পর্যন্ত সেই ফাংশন এর সব কাজ শেষনা হয়ে যাই ততক্ষণ সে Stack এই থাকে , এর মানে ফাংশনটা Stack থাকা মানে ফাংশনটা শেষ হয়নি এবং প্রোগ্রামটা চলছে । 
+                                
+                                আরেকটা বিষয় ঃ ফাংশন দুইভাবে শেষ হতে পারে  -- 
+                                
+                                ১ । সব কাজ শেষ করে 
+                                ২ । প্রোগ্রামার এর ইচ্ছা অনুযায়ী । সেটা কিভাবে। আমরা  return 0; তো সবাই দেখেছি , এই return statement দ্বারাই ফাংশনটা শেষ করা যাই। 
+                                
+                                
+                                <br><b>Example two:</b> 
+                                <pre style="color: burlywood;">
+                                    <code>
+                                        int main() {
+                                            int a = 2;
+                                            int b = 3;
+                                            int c = 4;
+                                            int sum = a + b;
+                                            return 0;
+                                           int  total = a + b + c;
+                                          }
+                                    </code>
+                                </pre>
+                                                             
+                                উপরোক্ত ফাংশনে একদম লাস্ট লাইনটা কাজ হউয়ার আগেই প্রোগ্রাম টা শেষ হয়ে যাবে । 
+                                
+                                তো রিকান্সন এ কি হয়, একটা ফাংশনই বারবার কল হতে থাকে, যতবার কল হয়ই সে ততবার স্তাচক এ ফাংশন এর সব লাইন সহকারে জমা হতে থাকে । রিকারসন ফাংশন এ আরেকটা জিনিস থাকে সেটা হচ্চে বেস কন্ডিশন , মানে এই কন্ডিশনে পৌছলে ফাংশন কল শেষ হবে । 
+                            
+                            
+                            </p>
+                            <p class="float-right">Published On: 8/7/18 9.23PM</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Time Complexity of Recursive function</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fa fa-quote-left" style="font-size: 60px; color: gray;"></i>
+                            The approach is start with simple then intermediate & at last some advance recursion example. 
+                                <pre>
+                                    <b>1. Simple One:</b>
+                                    <code style ="background: slategray; color: #ffffff;">
+                                    
+                                        int Function (int n) 
+                                            {
+                                                if ( n <= 0 ) return 1;
+                                                else 1 + Function ( n -1 )
+                                            }
+        
+                                    </code>
+                                </pre>
+
+                                
+                            In this function the base case/ condition to exit of function is 0. Though we will tall about only the asymptotic notation , base case scenario so no need to count the calculation step. 
+                            So how many times the function will be called, n times yeah!( How? ): n - 1 to 0 = n times. so time complexity = 0(n), read it like Big-oh (n). Linear time complexity
+                            
+                        
+                            <pre>
+                                <b>2. Easy One:</b>
+                                <code style ="background: slategray; color: #ffffff;">
+                                    int Function ( int  N ) 
+                                    {
+                                       if ( N <= 0 ) return 1;
+                                      else 1 + Function ( N - 5);
+                                    }
+                                </code>
+                            </pre>
+                        
+                            Here every time N will divided by 5. So time complexity logN ( base = 5 ).
+                            Hints: Binary search every time array divided by 2 . time complexity logN ( base = 2 ). Logarithmic Time complexity.
+                            
+
+                            <pre>
+                                <b>3. Mid Level: </b>
+                                <code style ="background: slategray; color: #ffffff;">
+                                    void Rec ( int n, int m, int o ) {
+                                        if ( n <= 0 ) return 0;
+                                        else {
+                                                Rec ( n -1, m + 1, o);
+                                                Rec ( n, m, o + 1);
+                                               }
+                                     }
+
+                                </code>
+                            </pre>
+
+                            <pre>
+                            At a time two recursive function making calls. so time complexity 2^n ( exponential time complexity). 
+                            for n = 1 Number of  call = 2
+                            for n = 2 Number of  call = 4
+                            for n = 3 Number of  call = 8
+                            Think like a tree. In every level its increasing as 2 ^ n;
+                             </pre>  
+                             
+                             <pre>
+                                <b>4. Mid Level: </b>
+                                <code style ="background: slategray; color: #ffffff;">
+                                    void Rec ( int n ) {
+                                        for ( int i = 0; i < n; i += 2) {
+                                                       //do something
+                                                 }
+                                      
+                                        if ( n <= 0 ) return 1;
+                                        else 1 + Rec( n - 5 );
+                                      }
+
+                                </code>
+                            </pre> 
+
+                            <pre>
+                                for every n for loop will be executed n/2 times and recursive function call is n - 5 times. 
+                                time complexity = (n - 5) * (n / 2) = (2n - 10) * n = 2n^2 - 10n
+                                for worst case scenario it is 0(n^2).
+
+                                It's enough i think to learn about time complexity measurement of recursive functions.
+                                Dig deep ): if you want. Quadratic time complexity
+                            </pre>
+
+                            <b>Time complexity of DFS & BFS: difficult</b>
+                              <br>  So we know about depth first search and breadth first search which are both graph traversal algorithm. 
+                              The time complexity of DFS and BFS is 0 ( |V| + |E| ). Why we are writing like this. You can see something 
+                              difference, we are using modulus like symbol.
+
+                                Let's clear it, so what we do it bfs, dfs. we traverse all the nodes , all the edges. Suppose there are 1000 
+                                vertex and 100 edges of a graph. Because of the asymptotic and worst case scenario we only take the dominating
+                                one. so here it is 1000. if the vertex here dominate the age we will count time complexity based on vertex. 
+                                That's why write the time complexity of DFS & BFS Big-Oh( |V| + |E| ).
+                        </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+                <div class="row footer justify-content-center">
+                    <div class="col-md-10">
+                        <img src="images/pointing.png" alt="" name = "pointing-hand-img" class="img-fluid" height="200" width="200">
+                    </div>
+                    <div class="col-md-6 footer-body">
+                        <h4>Contact</h4>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p>House(476/Baragharia) Ranihati Road <br>
+                                    <b>Chapai-Nawabganj sadar, Rajshahi, Bangladesh</b>
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="font-weight-bold" style="color: #F39;">animesh.pust@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="font-weight-bold">+88 01750 894491</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 footer-body">
+                        <h4>Follow me</h4>
+                        <p class="font-weight-bold">Follow and like me on my other social sites</p>
+                        <a href="https://web.facebook.com/profile.php?id=100007481649229"><i class="fa fa-facebook fa-fw"></i></a>
+                        <a href="https://www.linkedin.com/in/animesh-karmakar-a331a7126/"><i class="fa fa-linkedin fa-fw"></i></a>
+                        <a href="https://www.github.com/animeshkarmakarAK"><i class="fa fa-github fa-fw"></i></a>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>

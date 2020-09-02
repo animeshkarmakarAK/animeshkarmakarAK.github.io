@@ -1,21 +1,29 @@
 
 body{
+<<<<<<< HEAD
+    /* font-family: 'Catamaran'; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+=======
     overflow: hidden;;
     font-family: 'Catamaran';
+>>>>>>> master
 }
 
+.main-content {
+    
+}
 h1{
     color: green;
     background: honeydew;
 }
 
 .myname{
-    font-family: 'Catamaran';
     background: whitesmoke;
     font-weight: bold;
     letter-spacing: 3px;
 }
 .about-me{
+    font-family: 'Catamaran';
     background: whitesmoke;
 }
 
@@ -49,13 +57,13 @@ h1{
 
 .skills{
     background: ;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 
 
 .language-header{
-    background: yellowgreen;
+    background: #FE3;
     border-radius: 4%;
     color: white;
 }
@@ -65,13 +73,13 @@ h1{
 }
 
 .framework-header{
-    background: blueviolet;
+    background: #FC5;
     border-radius: 4%;
     color: white;
 }
 
 .database-header{
-    background: burlywood;
+    background: #FA7;
     border-radius: 4%;
     color: darkslategray;
 }
@@ -82,7 +90,10 @@ h1{
     color: black;
 }
 
-.framework-body, .database-body, .others-body {
+.os-header {
+    background: #FEE;
+}
+.framework-body, .database-body,.os-body, .others-body {
     font-size: 22px;
 }
 
@@ -93,6 +104,8 @@ h1{
 }
 
 
+<<<<<<< HEAD
+=======
 .slider{
     background: #024;
     text-transform: uppercase;
@@ -157,17 +170,31 @@ h1{
     color: black;
 }
 
+>>>>>>> master
 
 .footer {
-    background: black;
+    background: #022;
     color: #fff;
     margin-top: 10px;
     min-height: 300px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.footer-body {
-    margin-top: 100px;
+.footer-body i{
+    border: 1px solid black;
+    background: #000;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 2px;
+    color: #fff;
+}
+
+.footer{
+    height: 500px;
+}
+
+.footer-body i:hover{
+    color: lightseagreen;
 }
 
 .footer img[name = "pointing-hand-img"]{
@@ -175,6 +202,48 @@ h1{
 }
 
 .social{
+<<<<<<< HEAD
+    max-width: 80px;
+    max-height: 80px;
+}
+
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    /* width: 15vw; */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #024; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    opacity: 0.7;
+  }
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Catamaran';
+  }
+  .sidebar a:hover{
+      color: whitesmoke;
+  }
+  .sidebar-toggle-button {
+      position: fixed;
+      top: 50px;
+      left: 15vw;
+      transition: 0.5s;
+      background: #024;
+      color: white;
+      z-index: 1;
+  }
+
+=======
     max-width: 100px;
     max-height: 100px;
 }
@@ -185,3 +254,4 @@ h1{
     top: 10px;
 
 }
+>>>>>>> master
