@@ -15,11 +15,10 @@
 <body>
     <div class="container-fluid">
             <div class="sidebar">
-                <a href="#" type="button">About Me</a>
+                <a href="#" type="button">Home</a>
                 <a href="./resume.html" type="button">Resume</a>
                 <a href="#" type="button">Publications</a>
                 <a href="#" type="button">Projects</a>
-                <a href="#" type="button">Contact Me</a>
                 <a href="./blog.html">Blog</a>
             </div>
    
