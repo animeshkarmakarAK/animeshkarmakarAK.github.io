@@ -55,28 +55,28 @@ window.onload = function () {
 
 
 
-    offPoint();
+    // offPoint();
 
-    if(screen.width < 700) {
-       offSlider();
-       onPoints();
-    }else {
-        onSlider();
-        offPoints();
-    }
+    // if(screen.width < 700) {
+    //    offSlider();
+    //    onPoints();
+    // }else {
+    //     onSlider();
+    //     offPoints();
+    // }
 
-    var btn = document.getElementById('dropdown-btn');
-    var btnOn = false;
-    btn.onclick = function()
-    {
-        if(!btnOn) {
-            onPoint();                
-            btnOn = true;
-        }else {
-            offPoint();
-            btnOn = false;
-        }
-    }
+    // var btn = document.getElementById('dropdown-btn');
+    // var btnOn = false;
+    // btn.onclick = function()
+    // {
+    //     if(!btnOn) {
+    //         onPoint();                
+    //         btnOn = true;
+    //     }else {
+    //         offPoint();
+    //         btnOn = false;
+    //     }
+    // }
 
 
     var aboutMe  = document.getElementsByClassName('about-me-btn')[0];
