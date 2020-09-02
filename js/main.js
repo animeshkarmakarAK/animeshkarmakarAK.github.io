@@ -79,15 +79,15 @@ window.onload = function () {
     // }
 
 
-    var aboutMe  = document.getElementsByClassName('about-me-btn')[0];
-    aboutMe.onclick = function(){
-        location = ".about-me";
-    }
+    // var aboutMe  = document.getElementsByClassName('about-me-btn')[0];
+    // aboutMe.onclick = function(){
+    //     location = ".about-me";
+    // }
 
-    var publicatinBtn = document.getElementsByClassName('publication-btn')[0];
-    publicatinBtn.onclick = function() {
-        location = "#publications";
-    }
+    // var publicatinBtn = document.getElementsByClassName('publication-btn')[0];
+    // publicatinBtn.onclick = function() {
+    //     location = "#publications";
+    // }
 }
 
 
