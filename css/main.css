@@ -125,10 +125,11 @@ h1{
 
 .footer-body i:hover{
     color: lightseagreen;
+    transition: 0.3s;
 }
 
 .footer img[name = "pointing-hand-img"]{
-    transform: rotate(-50deg);
+    transform: rotate(-60deg);
 }
 
 .social{
@@ -148,7 +149,7 @@ h1{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    opacity: 0.7;
+    /* opacity: 0.7; */
   }
 .sidebar a {
     padding: 8px 8px 8px 32px;
