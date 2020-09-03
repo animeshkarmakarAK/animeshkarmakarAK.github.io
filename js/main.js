@@ -50,10 +50,17 @@ window.onload = function () {
         bar.style.width  = "0px";
     }
     else {
-        openSidebar();
+         openSidebar();
     }
 
 
+
+
+    //setting up about-me accoring to the height of screen height
+    // var about = document.getElementsByClassName('about-me')[0];
+    // let height = screen.height + 'px';
+    // about.style.height  = height;
+    //
 
     // offPoint();
 
@@ -90,7 +97,40 @@ window.onload = function () {
     // }
 }
 
+var resume_showing = false;
+function showResume()
+{
+    if(!resume_showing) {
+        var resume = document.getElementsByClassName('resume')[0];
+        resume.style.display = "block";
 
+        var info = document.getElementsByClassName('info')[0];
+        info.style.display = "none";
+
+        resume_showing =true;
+    }
+    else {
+        var resume = document.getElementsByClassName('resume')[0];
+        resume.style.display = "none";
+
+        var info = document.getElementsByClassName('info')[0];
+        info.style.display = "block";
+
+        resume_showing =false;
+
+    }
+
+}
+
+function iframeSet()
+{
+    var frame = document.getElementsByTagName('iframe')[0];
+    var width = screen.width + 'px';
+    var height = screen.height + 'px';
+
+    frame.style.width  = width;
+    frame.style.height = height;
+}
 
 
 
@@ -153,3 +193,4 @@ function showSidebar()
 
     }
 }
+

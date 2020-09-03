@@ -23,10 +23,16 @@
             </div>
    
             <div class="col-md-12 main-content">
+
+   
+        <div class="row main-content">
+
+            <div class="col-md-12">
                 <div class="row about-me">
                     <button type="button" class="sidebar-toggle-button" onclick="showSidebar();" id = "sidebar-toggle-button">Open sidebar</button>
                     <div class="col-md-6 offset-md-2 my-info">
                         <!-- <h1>Personal Info: </h1> -->
+                                                
                         
                         <div class="row myname">
                             <p>Animesh Karmakar <br><small>Web Developer & Machine Learning enthusiast</small></p>
@@ -42,9 +48,12 @@
                             have a <a href="https://www.journalbinet.com/jstei-090220-67.html">research paper publication</a>.
                         </p>
                     </div>
-                    <div class="col-md-4 my-image">
-                        <img src="./images/my-image.jpg" class="img-fluid rounded-circle" alt="My image">
-                    </div>
+                    <!-- <div class="row"> -->
+                        <div class="col-md-4 my-image">
+                            <img src="./images/my-image.jpg" class="rounded-circle" alt="My image">
+                        </div>
+                    <!-- </div> -->
+         
                 </div>
         
         
@@ -236,6 +245,7 @@
                         <a href="https://web.facebook.com/profile.php?id=100007481649229"><i class="fa fa-facebook fa-fw"></i></a>
                         <a href="https://www.linkedin.com/in/animesh-karmakar-a331a7126/"><i class="fa fa-linkedin fa-fw"></i></a>
                         <a href="https://www.github.com/animeshkarmakarAK"><i class="fa fa-github fa-fw"></i></a>
+                       
                     </div>
                 </div>
         
